@@ -396,21 +396,31 @@
 
     <!-- Kontakt -->
     <section id="kontakt" class="">
-        <div class=" container-base">
+        <div class=" mx-auto container-base bg-eggshell">
             <h2 class="">Kontakt</h2>
-            <form class="space-y-4">
-                <input type="text" placeholder="Twoje imię" class="w-full border p-2 rounded shadow-sm" />
-                <input type="email" placeholder="Twój email" class="w-full border p-2 rounded shadow-sm" />
-                <textarea placeholder="Twoja wiadomość" class="w-full border p-2 rounded shadow-sm" rows="5"></textarea>
+            <form class="space-y-8 flex flex-col items-center" action="https://formsubmit.co/mpond234@gmail.com"
+                method="POST">
+                <input name="name" type="text" placeholder="Twoje imię"
+                    class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta" />
+                <input name="contact" type="text" placeholder="Twój email lub numer telefonu"
+                    class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta" />
+                <textarea name="message" placeholder="Twoja wiadomość"
+                    class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta"
+                    rows="5"></textarea>
+                <input type="hidden" name="_captcha" value="false">
                 <button type="submit"
-                    class="bg-clay text-white py-2 px-4 rounded hover:bg-cocoa transition">Wyślij</button>
+                    class="bg-clay text-xl text-white py-4 px-16 rounded-xl hover:bg-terracotta transition">Wyślij</button>
             </form>
         </div>
     </section>
 
     <!-- Stopka -->
-    <footer class=" text-center text-sm text-cocoa py-24 ">
-        © 2025 Sarenka Studio. Wszystkie prawa zastrzeżone.
+    <footer class=" text-center text-sm text-cocoa py-24 leading-12">
+        <p>
+            © 2025 Sarenka Studio. Wszystkie prawa zastrzeżone.
+        </p>
+        <p>Design by <a class="underline hover:text-sage" href="https://karola-dev.netlify.app/" target="blank">Karola
+                Kukowska</a></p>
     </footer>
 </body>
 
