@@ -28,7 +28,8 @@
 }
 
 html{
-    scroll-behavior: smooth;
+  @apply font-ui;  
+  scroll-behavior: smooth;
 }
 
 /* Negative Space */
