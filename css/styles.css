@@ -1,0 +1,90 @@
+/* Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;600&family=Nunito:wght@400;700&family=Playlist+Script&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
+ /* --font-display: 'DM Serif Display', serif; */
+  /* --font-accent: 'Playlist Script', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@700&family=Montserrat&family=Nunito:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+--color-clay: #B96E5C;
+    --color-terracotta: #D88C6D;
+    --color-honey: #E7B960;
+    --color-pink: #EAC5C1;
+    --color-linen: #F4EFEA;
+    --color-anthracite: #2F2F2F;
+    --color-sage: #A3B18A;
+    --color-cocoa: #5E3B2C;
+ 
+  --font-dancing: 'Dancing Script', cursive;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-ui: 'Montserrat', sans-serif;
+  --font-lora: 'Lora', serif;
+  --font-barlow: 'Barlow Condensed', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Negative Space */
+.container {
+  @apply mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl px-4 sm:px-6 lg:px-8 leading-8;
+}
+
+.container-text {
+  @apply mx-auto max-w-screen-md px-4 sm:px-6 lg:px-8 leading-7 text-anthracite font-ui;
+}
+
+.section {
+  @apply py-16;
+}
+
+.section-large {
+  @apply py-24;
+}
+
+/* Typography */
+h2 {
+  @apply text-5xl font-playfair font-bold text-clay pt-16 pb-8;
+  /* dwa kolory: cocoa i clay */
+}
+
+h3 {
+    @apply text-3xl tracking-widest font-semibold uppercase text-terracotta text-center py-16;
+    
+}
+
+h4 {
+    @apply text-xl tracking-wide font-[500] uppercase text-cocoa text-center py-8;
+}
+
+.content {
+  @apply font-nunito text-xl text-base text-anthracite leading-7 mt-4;
+  
+}
+
+.subtitle {
+  @apply text-xl text-cocoa italic font-playfair;
+}
+
+.text-link {
+  @apply text-sage underline underline-offset-4 hover:text-clay;
+
+}
+
+.text-handwritten {
+    @apply text-4xl font-dancing text-clay;   
+}
+
+.gallery-wrapper {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4;
+}
+
+.gallery-img {
+  @apply rounded-xl shadow-md transition-transform duration-300 hover:scale-105;
+}
