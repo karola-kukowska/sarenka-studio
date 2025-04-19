@@ -32,14 +32,15 @@ html{
 }
 
 /* Negative Space */
-.container {
-  @apply mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl px-4 sm:px-6 lg:px-8 leading-8;
+.container-base {
+  @apply mx-auto px-8 sm:px-20 lg:max-w-3/4 2xl:max-w-[1250px] py-8 sm:py-16;
+  @apply border border-stone-400 2xl:border-stone-400;
 }
 
-.container-text {
-  @apply mx-auto max-w-screen-md px-4 sm:px-6 lg:px-8 leading-7 text-anthracite font-ui;
+#navbar {
+  @apply py-4 text-lg text-cocoa;
+  
 }
-
 .section {
   @apply py-16;
 }
@@ -49,6 +50,7 @@ html{
 }
 
 /* Typography */
+
 h2 {
   @apply text-5xl font-playfair font-bold text-clay pt-16 pb-8;
   /* dwa kolory: cocoa i clay */
@@ -64,7 +66,7 @@ h4 {
 }
 
 .content {
-  @apply font-nunito text-xl text-base text-anthracite leading-7 mt-4;
+  @apply font-nunito text-xl text-base text-anthracite leading-8 mt-4;
   
 }
 

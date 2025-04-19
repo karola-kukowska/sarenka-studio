@@ -24,16 +24,16 @@
 
     <!-- Navigation -->
     <header class="bg-linen py-4">
-        <div class="container flex justify-between items-center">
+        <nav id="navbar" class=" container-base flex justify-between items-center">
             <h1 class="text-2xl font-nunito text-clay">Sarenka Studio</h1>
-            <nav class="space-x-4 text-cocoa font-ui">
+            <div class="space-x-4 text-cocoa font-ui">
                 <a href="#intro">Intro</a>
                 <a href="#galeria">Galeria</a>
                 <a href="#warsztaty">Warsztaty</a>
                 <a href="#pracownia">Pracownia</a>
                 <a href="#kontakt">Kontakt</a>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -49,12 +49,10 @@
 
 
     <section id="intro" class="section bg-linen">
-        <div class="container ">
+        <div class=" container-base ">
             <h2 class="">Witaj na stronie mojej pracowni!</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-                <!-- Tekst -->
-                <div class="container-text">
+                <div class="">
                     <p class="content mb-8">
                         Nazywam się Małgorzata Sarnacka i łączę doświadczenie projektantki graficznej z pasją do
                         rzemiosła i
@@ -92,9 +90,9 @@
 
 
     <section id="galeria" class="section bg-linen">
-        <div class="container">
+        <div class="container-base">
             <h2 class="">Galeria</h2>
-            <p class="container-text content mb-12">
+            <p class="content mb-12">
                 Zapraszam do obejrzenia kilku ujęć z mojej pracowni i warsztatów. Znajdziesz tu przykładowe kafle,
                 proces twórczy i detale, które tworzą klimat miejsca, w którym powstają ceramiczne historie.
             </p>
@@ -142,7 +140,7 @@
 
     <!-- Warsztaty -->
     <section id="warsztaty" class="section bg-linen">
-        <div class="container-text">
+        <div class=" container-base">
             <h2 class="">Warsztaty</h2>
             <p class="subtitle">Z miłości do wzorów, z pasji do rzemiosła</p>
 
@@ -280,7 +278,7 @@
                         </div>
 
                         <!-- KAFEL 9 (zdjęcie) -->
-                        <div class="overflow-hidden rounded-2xl hidden 3xl:block">
+                        <div class="overflow-hidden rounded-2xl hidden xl:block">
                             <img src="https://picsum.photos/600/400?random=3" alt="Kafel warsztatowy 3"
                                 class="img-hover rounded-2xl w-full h-full object-cover" />
                         </div>
@@ -301,7 +299,7 @@
 
     <!-- Pracownia -->
     <section id="pracownia" class="section">
-        <div class="container-text">
+        <div class=" container-base">
             <h2 class="">Pracownia</h2>
             <p class="subtitle">Z miłości do wzorów, z pasji do rzemiosła</p>
             <h3 class="text-2xl  text-clay mt-8 mb-4">Mój proces twórczy</h3>
@@ -374,7 +372,7 @@
 
     <!-- Kontakt -->
     <section id="kontakt" class="section">
-        <div class="container-text">
+        <div class=" container-base">
             <h2 class="">Kontakt</h2>
             <form class="space-y-4">
                 <input type="text" placeholder="Twoje imię" class="w-full border p-2 rounded shadow-sm" />
