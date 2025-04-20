@@ -846,8 +846,9 @@ h4 {
 }
 .content-intro {
   margin-top: calc(var(--spacing) * 4);
-  text-align: justify;
   font-family: var(--font-nunito);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   --tw-leading: calc(var(--spacing) * 8);
@@ -855,7 +856,10 @@ h4 {
   color: var(--color-cocoa);
   font-style: italic;
   @media (width >= 48rem) {
-    padding-inline: calc(var(--spacing) * 12);
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  @media (width >= 48rem) {
+    text-align: center;
   }
   @media (width >= 48rem) {
     font-size: var(--text-2xl);
