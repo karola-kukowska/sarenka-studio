@@ -130,3 +130,8 @@ h4 {
    @apply h-[220px] w-full object-cover;
 }
 
+/* hamburger menu */
+.mobile-links {
+@apply block pl-4 py-4 bg-clay active:bg-clay/70 focus:bg-clay/70;
+}
+

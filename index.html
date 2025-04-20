@@ -9,6 +9,7 @@
     <meta name="author" content="Małgorzata Sarnacka" />
     <title>Sarenka Studio</title>
     <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@700&family=Montserrat&family=Nunito:wght@400;700&display=swap"
@@ -23,21 +24,54 @@
 <body class="text-anthracite font-nunito">
 
     <!-- Navigation -->
-    <header class="bg-linen py-4 ">
-        <nav id="navbar"
-            class="mx-auto px-4 sm:px-8 lg:max-w-9/10 2xl:max-w-[1600px] flex justify-between items-center h-[90px] gap-16">
-            <div class="flex flex-row items-center gap-6">
-                <img class="max-h-[80px]" src="/images/logo/Sarenka studio logo.png" alt="" srcset="">
-                <h1 class="text-2xl sm:text-3xl font-comfortaa text-clay tracking-wide font-[1000]">Sarenka Studio</h1>
-            </div>
-            <div class="space-x-4 text-cocoa text-xl xl:text-2xl font-ui flex flex-row gap-4 flex-wrap">
-                <a class="hover:underline underline-offset-4" href="#intro">Intro</a>
-                <a class="hover:underline underline-offset-4" href="#galeria">Galeria</a>
-                <a class="hover:underline underline-offset-4" href="#warsztaty">Warsztaty</a>
-                <a class="hover:underline underline-offset-4" href="#pracownia">Pracownia</a>
-                <a class="hover:underline underline-offset-4" href="#kontakt">Kontakt</a>
-            </div>
-        </nav>
+    <header class="bg-linen  ">
+        <!-- Desktop Menu -->
+        <div class="hidden lg:block">
+            <nav id="navbar"
+                class="mx-auto lg:max-w-9/10 2xl:max-w-[1600px] flex justify-between items-center h-[90px] gap-8">
+                <div class="flex flex-row items-center gap-6">
+                    <img class="max-h-[80px]" src="/images/logo/Sarenka studio logo.png" alt="" srcset="">
+                    <h1 class="text-2xl sm:text-3xl font-comfortaa text-clay tracking-wide font-[1000]">Sarenka Studio
+                    </h1>
+                </div>
+                <div class="space-x-4 text-cocoa text-xl xl:text-2xl font-ui flex flex-row gap-4 flex-wrap">
+                    <a class="hover:underline underline-offset-4" href="#intro">Intro</a>
+                    <a class="hover:underline underline-offset-4" href="#galeria">Galeria</a>
+                    <a class="hover:underline underline-offset-4" href="#warsztaty">Warsztaty</a>
+                    <a class="hover:underline underline-offset-4" href="#pracownia">Pracownia</a>
+                    <a class="hover:underline underline-offset-4" href="#kontakt">Kontakt</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="block lg:hidden">
+            <nav class="">
+                <div class="flex flex-row items-center justify-between px-4 py-2">
+                    <div class="flex flex-row items-center gap-6">
+                        <img class="max-h-[60px]" src="/images/logo/Sarenka studio logo.png" alt="" srcset="">
+                        <h1 class="text-2xl sm:text-3xl font-comfortaa text-clay tracking-wide font-[1000]">Sarenka
+                            Studio
+                        </h1>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);"
+                        class="border border-2 border-clay rounded-md h-full py-2 px-4 text-clay text-2xl"
+                        onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks" class="hidden transform transition-all flex flex-col text-eggshell text-xl">
+                    <a class="mobile-links " href="#intro">Intro</a>
+                    <a class="mobile-links " href="#galeria">Galeria</a>
+                    <a class="mobile-links " href="#warsztaty">Warsztaty</a>
+                    <a class="mobile-links " href="#pracownia">Pracownia</a>
+                    <a class="mobile-links " href="#kontakt">Kontakt</a>
+                </div>
+
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -487,6 +521,17 @@
                 target="blank">Karola
                 Kukowska</a></p>
     </footer>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
