@@ -28,7 +28,7 @@
         <!-- Desktop Menu -->
         <div class="hidden lg:block">
             <nav id="navbar"
-                class="mx-auto lg:max-w-9/10 2xl:max-w-[1600px] flex justify-between items-center h-[90px] gap-8">
+                class="mx-auto lg:max-w-9/10 2xl:max-w-[1600px] flex justify-between items-center h-[90px] gap-6">
                 <div class="flex flex-row items-center gap-6">
                     <img class="max-h-[80px]" src="/images/logo/Sarenka studio logo.png" alt="" srcset="">
                     <h1 class="text-2xl sm:text-3xl font-comfortaa text-clay tracking-wide font-[1000]">Sarenka Studio
@@ -76,16 +76,20 @@
 
     <!-- Hero Section -->
     <section
-        class="relative h-[calc(100vh-90px)] bg-filter brightness-90 contrast-90 bg-[url('/images/bg/bg-1.webp')] bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center">
-        <div class="mx-auto text-center p-24 inline ">
-            <h1
-                class=" text-5xl xl:text-8xl font-comfortaa mx-auto lg:max-w-5/6 font-[900] text-eggshell tracking-wide opacity-100 p-12 backdrop-blur-xs bg-cocoa/10 rounded-2xl">
-                Kreatywność i
-                ukojenie
-            </h1>
-            <!-- backdrop-blur-xs bg-cocoa/10 rounded-2xl -->
+        class="relative h-64 lg:h-[calc(100vh-90px)] bg-filter brightness-90 contrast-90 bg-[url('/images/bg/bg-1.webp')] bg-fixed bg-cover bg-center  bg-no-repeat flex flex-col justify-center">
+        <div class="h-full w-full backdrop-blur-xs lg:backdrop-blur-none flex items-center">
+
+            <div class="mx-auto text-center p-24 inline ">
+                <h1
+                    class="text-4xl lg:text-5xl xl:text-8xl font-comfortaa mx-auto lg:max-w-5/6 font-[900] text-cocoa lg:text-eggshell tracking-wide opacity-100 lg:p-12 lg:lg:backdrop-blur-xs lg:bg-cocoa/10 rounded-2xl">
+                    Kreatywność i
+                    ukojenie
+                </h1>
+                <!-- backdrop-blur-xs bg-cocoa/10 rounded-2xl -->
+            </div>
         </div>
     </section>
+
 
     <!-- Intro Section -->
     <section id="intro" class=" bg-linen">
@@ -141,11 +145,11 @@
 
     <!-- Bg section -->
     <div
-        class="hidden md:block relative h-[90vh] bg-[url('/images/bg/bg-2.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
+        class="hidden lg:block relative h-[90vh] bg-[url('/images/bg/bg-2.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
     </div>
 
     <!-- Galeria -->
-    <section id="galeria" class=" bg-terracotta/40">
+    <section id="galeria" class="hidden md:block bg-terracotta/40">
         <div class="container-base">
             <h2 class="mb-16">Galeria inspiracji</h2>
             <p class="content-intro mb-12 text-justify">
@@ -201,11 +205,11 @@
 
     <!-- Bg section -->
     <div
-        class="hidden md:block relative h-[90vh] bg-[url('/images/bg/bg-3.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
+        class="hidden lg:block relative h-[90vh] bg-[url('/images/bg/bg-3.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
     </div>
 
     <!-- Warsztaty -->
-    <section id="warsztaty" class=" bg-linen">
+    <section id="warsztaty" class=" bg-clay/20 md:bg-linen">
         <div class=" container-base">
             <h2 class="">Warsztaty</h2>
             <p class="subtitle">Z miłości do wzorów, z pasji do rzemiosła</p>
@@ -398,7 +402,7 @@
 
     <!-- Bg section -->
     <div
-        class="hidden md:block relative h-[90vh] bg-[url('/images/bg/bg-4.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
+        class="hidden lg:block relative h-[90vh] bg-[url('/images/bg/bg-4.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
     </div>
 
     <!-- Pracownia -->
@@ -490,7 +494,7 @@
     </section>
 
     <!-- Bg section -->
-    <div class="relative bg-[url('/images/bg/bg-5.webp')] bg-fixed bg-cover bg-center bg-no-repeat py-86">
+    <div class="relative bg-[url('/images/bg/bg-5.webp')] bg-fixed bg-cover bg-center bg-no-repeat py-36 lg:py-86">
         <!-- Kontakt -->
         <section id="kontakt" class="bg-eggshell w-5/6 lg:w-1/2 mx-auto p-12 rounded-2xl">
             <div class="">

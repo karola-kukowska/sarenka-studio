@@ -8,6 +8,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-green-200: oklch(92.5% 0.084 155.995);
+    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -258,14 +261,14 @@
   .inline {
     display: inline;
   }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
   .h-\[90px\] {
     height: 90px;
   }
   .h-\[90vh\] {
     height: 90vh;
-  }
-  .h-\[calc\(100vh-90px\)\] {
-    height: calc(100vh - 90px);
   }
   .h-auto {
     height: auto;
@@ -317,9 +320,6 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-  .gap-16 {
-    gap: calc(var(--spacing) * 16);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -379,8 +379,17 @@
   .border-terracotta {
     border-color: var(--color-terracotta);
   }
+  .bg-blue-200 {
+    background-color: var(--color-blue-200);
+  }
   .bg-clay {
     background-color: var(--color-clay);
+  }
+  .bg-clay\/20 {
+    background-color: color-mix(in srgb, #B96E5C 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-clay) 20%, transparent);
+    }
   }
   .bg-cocoa {
     background-color: var(--color-cocoa);
@@ -496,8 +505,8 @@
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
-  .py-86 {
-    padding-block: calc(var(--spacing) * 86);
+  .py-36 {
+    padding-block: calc(var(--spacing) * 36);
   }
   .text-center {
     text-align: center;
@@ -518,9 +527,9 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -629,9 +638,9 @@
       outline-color: var(--color-terracotta);
     }
   }
-  .sm\:px-8 {
+  .sm\:bg-yellow-200 {
     @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 8);
+      background-color: var(--color-yellow-200);
     }
   }
   .sm\:text-3xl {
@@ -645,6 +654,16 @@
       display: block;
     }
   }
+  .md\:bg-green-200 {
+    @media (width >= 48rem) {
+      background-color: var(--color-green-200);
+    }
+  }
+  .md\:bg-linen {
+    @media (width >= 48rem) {
+      background-color: var(--color-linen);
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -653,6 +672,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:h-\[calc\(100vh-90px\)\] {
+    @media (width >= 64rem) {
+      height: calc(100vh - 90px);
     }
   }
   .lg\:w-1\/2 {
@@ -668,6 +692,51 @@
   .lg\:max-w-9\/10 {
     @media (width >= 64rem) {
       max-width: calc(9/10 * 100%);
+    }
+  }
+  .lg\:bg-cocoa\/10 {
+    @media (width >= 64rem) {
+      background-color: color-mix(in srgb, #5E3B2C 10%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-cocoa) 10%, transparent);
+      }
+    }
+  }
+  .lg\:p-12 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:py-86 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 86);
+    }
+  }
+  .lg\:text-5xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .lg\:text-eggshell {
+    @media (width >= 64rem) {
+      color: var(--color-eggshell);
+    }
+  }
+  .lg\:backdrop-blur-none {
+    @media (width >= 64rem) {
+      --tw-backdrop-blur:  ;
+      -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+      backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    }
+  }
+  .lg\:lg\:backdrop-blur-xs {
+    @media (width >= 64rem) {
+      @media (width >= 64rem) {
+        --tw-backdrop-blur: blur(var(--blur-xs));
+        -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+        backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+      }
     }
   }
   .xl\:block {
