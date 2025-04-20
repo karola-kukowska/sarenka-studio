@@ -60,7 +60,7 @@ h4 {
 }
 
 .content-intro {
-  @apply font-nunito text-2xl italic text-justify text-cocoa leading-8 mt-4 px-12;
+  @apply font-nunito text-xl md:text-2xl italic text-justify text-cocoa leading-8 mt-4 md:px-12;
 }
 
 .subtitle {
