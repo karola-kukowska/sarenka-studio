@@ -25,7 +25,7 @@
     <!-- Navigation -->
     <header class="bg-linen py-4">
         <nav id="navbar" class="container-base flex justify-between items-center">
-            <h1 class="text-2xl font-nunito text-clay">Sarenka Studio</h1>
+            <h1 class="text-2xl font-comfortaa text-clay tracking-wide font-[900]">Sarenka Studio</h1>
             <div class="space-x-4 text-cocoa font-ui">
                 <a href="#intro">Intro</a>
                 <a href="#galeria">Galeria</a>
@@ -40,8 +40,8 @@
     <section class="relative h-[80vh] bg-cover bg-center bg-no-repeat"
         style="background-image: url('https://picsum.photos/1600/800');">
         <div class="absolute inset-0 bg-white bg-opacity-60 flex flex-col justify-center items-center text-center px-4">
-            <h1 class="text-7xl font-nunito text-clay mb-8">Sarenka Studio</h1>
-            <p class="text-4xl font-ui text-cocoa">Kreatywność i ukojenie</p>
+            <h1 class="text-7xl font-comfortaa font-[900] text-clay mb-8 tracking-wide">Sarenka Studio</h1>
+            <p class="text-4xl font-comfortaa text-cocoa font-[600] tracking-wide">Kreatywność i ukojenie</p>
         </div>
     </section>
 
@@ -50,7 +50,7 @@
 
     <section id="intro" class=" bg-linen">
         <div class=" container-base ">
-            <h2 class="">Witaj na stronie mojej pracowni!</h2>
+            <h2 class="mb-16">Witaj na stronie mojej pracowni!</h2>
             <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
                 <div class="flex flex-col justify-between h-full">
                     <p class="content mb-8">
@@ -92,7 +92,7 @@
                 </div> -->
             </div>
 
-            <p class="text-2xl italic font-playfair text-center text-terracotta py-16">Zapraszam do śledzenia mojej
+            <p class="text-handwritten text-center py-16">Zapraszam do śledzenia mojej
                 podróży z ceramiką</p>
         </div>
     </section>
@@ -100,8 +100,8 @@
 
     <section id="galeria" class=" bg-linen">
         <div class="container-base">
-            <h2 class="">Galeria inspiracji</h2>
-            <p class="content mb-12">
+            <h2 class="mb-16">Galeria inspiracji</h2>
+            <p class="content-intro mb-12 text-justify">
                 Zebrane tutaj inspiracje to moje ulubione wzory, kolory i formy – odnalezione w podróżach, książkach i
                 codziennych
                 zachwytach. Szczególne miejsce zajmują tu kafle z Hiszpanii, których ornamenty i barwy od lat mnie
@@ -160,8 +160,8 @@
             <h3 class="text-2xl text-clay mt-8 mb-4">Nie tylko Azulejos – warsztaty
                 malowania
                 kafelków</h3>
-            <p class="content mb-8 italic">
-                Zapraszam na 3-godzinne warsztaty malowania kafli ceramicznych dla dorosłych. Nie trzeba mieć żadnego
+            <p class="content-intro mb-8" style="text-align: center;">
+                Zapraszam na 2.5-godzinne warsztaty malowania kafli ceramicznych dla dorosłych. Nie trzeba mieć żadnego
                 doświadczenia – wystarczy chęć tworzenia i odrobina ciekawości!
             </p>
             <p class="content mb-8">
@@ -191,10 +191,14 @@
                     <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6">
 
                         <!-- KAFEL 1 -->
-                        <div class="p-6 soft-border bg-eggshell card-hover">
-                            <h4 class="font-comfortaa text-xl text-clay mb-2">Powitanie i wprowadzenie</h4>
-                            <p class="text-soft text-sm uppercase mb-3">0:00–0:15</p>
-                            <p class="text-soft">
+                        <div class="bg-eggshell workshop-card">
+                            <div>
+                                <h4 class="workshop-title">Powitanie i wprowadzenie
+                                </h4>
+                                <p class="workshop-time">0:00–0:15</p>
+                            </div>
+
+                            <p class="workshop-text">
                                 Na początek zapraszam do krótkiego przedstawienia się – dla chętnych będzie to okazja,
                                 by poznać siebie nawzajem
                                 i podzielić się oczekiwaniami. Pokażę inspiracje z różnych kultur, takich jak sztuka
@@ -208,10 +212,14 @@
                         </div>
 
                         <!-- KAFEL 2 -->
-                        <div class="p-6 soft-border bg-pink/50 card-hover">
-                            <h4 class="font-comfortaa text-xl text-clay mb-2">Omówienie technik i materiałów</h4>
-                            <p class="text-soft text-sm uppercase mb-3">0:15–0:20</p>
-                            <p class="text-soft">
+                        <div class="bg-pink/50 workshop-card">
+                            <div>
+
+                                <h4 class="workshop-title">Omówienie technik i materiałów</h4>
+                                <p class="workshop-time">0:15–0:20</p>
+                            </div>
+
+                            <p class="workshop-text">
                                 W tej części opowiem o farbach podszkliwnych, narzędziach, takich jak aplikatory i
                                 pędzle. Wyjaśnię, jak
                                 pracować z biskwitem – będziemy mówić o jego czystości, chłonności i precyzyjności.
@@ -230,11 +238,15 @@
                         </div>
 
                         <!-- KAFEL 4 -->
-                        <div class="p-6 soft-border bg-terracotta/50 card-hover">
-                            <h4 class="font-comfortaa text-xl text-clay mb-2">Kafel nr 1 – wzór geometryczny
-                            </h4>
-                            <p class="text-soft text-sm uppercase mb-3">0:20–1:05</p>
-                            <p class="text-soft">
+                        <div class="bg-terracotta/50 workshop-card">
+                            <div>
+                                <h4 class="workshop-title">Kafel nr 1 – wzór geometryczny
+
+                                </h4>
+                                <p class="workshop-time">0:20–1:05</p>
+                            </div>
+
+                            <p class="workshop-text">
                                 Pierwsza część praktyczna to malowanie kafla z geometrycznym wzorem inspirowanym sztuką
                                 islamską. Wybierzecie
                                 wzór, który następnie przeniesiecie na kafelek za pomocą kalki lub ołówka. Potem
@@ -244,10 +256,14 @@
                         </div>
 
                         <!-- KAFEL 5 -->
-                        <div class="p-6 soft-border bg-sage/50 card-hover">
-                            <h4 class="font-comfortaa text-xl text-clay mb-2">Przerwa na kawę i herbatę</h4>
-                            <p class="text-soft text-sm uppercase mb-3">1:05–1:20</p>
-                            <p class="text-soft">
+                        <div class="bg-sage/50 workshop-card">
+                            <div>
+
+                                <h4 class="workshop-title">Przerwa na kawę i herbatę</h4>
+                                <p class="workshop-time">1:05–1:20</p>
+                            </div>
+
+                            <p class="workshop-text">
                                 To czas na chwilę relaksu – napój, rozmowy i podglądanie prac innych uczestników.
                                 Będziecie mieli okazję
                                 wymienić się pomysłami i znaleźć nowe inspiracje.
@@ -255,10 +271,14 @@
                         </div>
 
                         <!-- KAFEL 6 -->
-                        <div class="p-6 soft-border bg-milkoat card-hover">
-                            <h4 class="font-comfortaa text-xl text-clay mb-2">Kafel nr 2 – wzór odręczny</h4>
-                            <p class="text-soft text-sm uppercase mb-3">1:20–2:10</p>
-                            <p class="text-soft">
+                        <div class="bg-milkoat workshop-card">
+                            <div>
+
+                                <h4 class="workshop-title">Kafel nr 2 – wzór odręczny</h4>
+                                <p class="workshop-time">1:20–2:10</p>
+                            </div>
+
+                            <p class="workshop-text">
                                 Druga część warsztatów to swobodne tworzenie wzoru inspirowanego tradycyjnymi stylami,
                                 takimi jak Delft,
                                 majolika czy ornamenty z orientu. W tej części pracy będziecie mogli eksperymentować z
@@ -275,10 +295,14 @@
                         </div>
 
                         <!-- KAFEL 8 -->
-                        <div class="p-6 soft-border bg-honey/50 card-hover">
-                            <h4 class="font-comfortaa text-xl text-clay mb-2">Podsumowanie i prezentacja prac</h4>
-                            <p class="text-soft text-sm uppercase mb-3">2:10–2:30</p>
-                            <p class="text-soft">
+                        <div class="bg-honey/50 workshop-card">
+                            <div>
+
+                                <h4 class="workshop-title">Podsumowanie i prezentacja prac</h4>
+                                <p class="workshop-time">2:10–2:30</p>
+                            </div>
+
+                            <p class="workshop-text">
                                 Pod koniec warsztatów odkładamy prace do wyschnięcia, które po około trzech tygodniach
                                 będą gotowe do wypału.
                                 Wspólnie omówimy Wasze doświadczenia z malowania, a także proces wypalania oraz jak
@@ -397,7 +421,7 @@
     <!-- Kontakt -->
     <section id="kontakt" class="">
         <div class=" mx-auto container-base bg-eggshell">
-            <h2 class="">Kontakt</h2>
+            <h2 class="mb-16 text-center">Kontakt</h2>
             <form class="space-y-8 flex flex-col items-center" action="https://formsubmit.co/mpond234@gmail.com"
                 method="POST">
                 <input name="name" type="text" placeholder="Twoje imię"
