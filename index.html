@@ -20,11 +20,11 @@
 
 </head>
 
-<body class="bg-linen text-anthracite font-nunito">
+<body class="text-anthracite font-nunito">
 
     <!-- Navigation -->
     <header class="bg-linen py-4">
-        <nav id="navbar" class="container-base flex justify-between items-center">
+        <nav id="navbar" class="container-base flex justify-between items-center h-[60px]">
             <h1 class="text-2xl font-comfortaa text-clay tracking-wide font-[900]">Sarenka Studio</h1>
             <div class="space-x-4 text-cocoa font-ui">
                 <a href="#intro">Intro</a>
@@ -37,17 +37,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-[80vh] bg-cover bg-center bg-no-repeat"
-        style="background-image: url('https://picsum.photos/1600/800');">
-        <div class="absolute inset-0 bg-white bg-opacity-60 flex flex-col justify-center items-center text-center px-4">
-            <h1 class="text-7xl font-comfortaa font-[900] text-clay mb-8 tracking-wide">Sarenka Studio</h1>
-            <p class="text-4xl font-comfortaa text-cocoa font-[600] tracking-wide">Kreatywność i ukojenie</p>
+    <section
+        class="relative h-[calc(100vh-60px)] bg-[url('/images/bg/bg-1.webp')] bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center">
+        <div class="mx-auto text-center p-24 inline ">
+            <h1 class="text-8xl font-comfortaa font-[900] text-eggshell mb-8 tracking-wide opacity-100">Kreatywność i
+                ukojenie
+            </h1>
+            <!--             
+            <h1 class="text-7xl font-comfortaa font-[900] text-eggshell mb-8 tracking-wide opacity-100">Sarenka Studio
+            </h1>
+            <p class="text-4xl font-comfortaa text-eggshell font-[600] tracking-wide opacity-100">Kreatywność i ukojenie
+            </p> -->
         </div>
     </section>
 
     <!-- Intro Section -->
-
-
     <section id="intro" class=" bg-linen">
         <div class=" container-base ">
             <h2 class="mb-16">Witaj na stronie mojej pracowni!</h2>
@@ -64,7 +68,8 @@
                     <p class="content mb-8">
                         Przez lata pracowałam jako graficzka w branży modowej. Od niedawna rozwijam własną ścieżkę
                         twórczą —
-                        tworzę ręcznie malowane kafle, prowadzę warsztaty i dzielę się wiedzą o dekoracyjnych technikach
+                        tworzę ręcznie malowane kafle, prowadzę warsztaty i dzielę się wiedzą o dekoracyjnych
+                        technikach
                         ceramicznych.
                     </p>
 
@@ -72,7 +77,8 @@
 
                     <p class="content">Ceramika to dla mnie medytacja w ruchu. Każdy przedmiot nosi w sobie ślad
                         ręki i czasu. Uwielbiam eksperymentować z
-                        formą i kolorem, szukać harmonii między surowością a delikatnością. Moje prace łączą inspiracje
+                        formą i kolorem, szukać harmonii między surowością a delikatnością. Moje prace łączą
+                        inspiracje
                         tradycyjnym rzemiosłem i
                         nowoczesną estetyką. Zajrzyj do galerii, by poznać różnorodne efekty mojej twórczości.</p>
                 </div>
@@ -97,12 +103,18 @@
         </div>
     </section>
 
+    <!-- Bg section -->
+    <div
+        class="hidden md:block relative h-[90vh] bg-[url('/images/bg/bg-2.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
+    </div>
 
-    <section id="galeria" class=" bg-linen">
+    <!-- Galeria -->
+    <section id="galeria" class=" bg-terracotta/40">
         <div class="container-base">
             <h2 class="mb-16">Galeria inspiracji</h2>
             <p class="content-intro mb-12 text-justify">
-                Zebrane tutaj inspiracje to moje ulubione wzory, kolory i formy – odnalezione w podróżach, książkach i
+                Zebrane tutaj inspiracje to moje ulubione wzory, kolory i formy – odnalezione w podróżach, książkach
+                i
                 codziennych
                 zachwytach. Szczególne miejsce zajmują tu kafle z Hiszpanii, których ornamenty i barwy od lat mnie
                 fascynują. Niech to
@@ -151,6 +163,11 @@
         </div>
     </section>
 
+    <!-- Bg section -->
+    <div
+        class="hidden md:block relative h-[90vh] bg-[url('/images/bg/bg-3.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
+    </div>
+
     <!-- Warsztaty -->
     <section id="warsztaty" class=" bg-linen">
         <div class=" container-base">
@@ -161,18 +178,21 @@
                 malowania
                 kafelków</h3>
             <p class="content-intro mb-8" style="text-align: center;">
-                Zapraszam na 2.5-godzinne warsztaty malowania kafli ceramicznych dla dorosłych. Nie trzeba mieć żadnego
+                Zapraszam na 2.5-godzinne warsztaty malowania kafli ceramicznych dla dorosłych. Nie trzeba mieć
+                żadnego
                 doświadczenia – wystarczy chęć tworzenia i odrobina ciekawości!
             </p>
             <p class="content mb-8">
                 W trakcie spotkania uczestnicy poznają
-                krótką historię zdobienia kafelków w różnych kulturach, a następnie wykonają dwa własnoręcznie malowane
+                krótką historię zdobienia kafelków w różnych kulturach, a następnie wykonają dwa własnoręcznie
+                malowane
                 kafle w dwóch technikach: geometryczny wzór inspirowany ornamentyką islamską oraz swobodny motyw
                 dekoracyjny
                 malowany odręcznie.
             </p>
             <p class="content mb-6">
-                Pracujemy na surowych kaflach (biskwicie), używając profesjonalnych farb podszkliwnych, aplikatorów z
+                Pracujemy na surowych kaflach (biskwicie), używając profesjonalnych farb podszkliwnych, aplikatorów
+                z
                 cienkimi końcówkami i pędzli. Wzory nanosimy przy pomocy ołówka, kalki lub pisaków olejowych, które
                 wypalają
                 się podczas wypału, pozostawiając czyste kontury. Omawiam również etapy pracy z ceramiką – od
@@ -180,7 +200,8 @@
                 powierzchni po proces wypału i szkliwienia.
             </p>
             <p class="content mb-8">
-                Każdy uczestnik otrzymuje komplet materiałów oraz dostęp do ekspresu z kawą i herbaty. Gotowe, podwójnie
+                Każdy uczestnik otrzymuje komplet materiałów oraz dostęp do ekspresu z kawą i herbaty. Gotowe,
+                podwójnie
                 wypalone prace będą do odbioru około 3 tygodnie po warsztatach.
             </p>
 
@@ -199,7 +220,8 @@
                             </div>
 
                             <p class="workshop-text">
-                                Na początek zapraszam do krótkiego przedstawienia się – dla chętnych będzie to okazja,
+                                Na początek zapraszam do krótkiego przedstawienia się – dla chętnych będzie to
+                                okazja,
                                 by poznać siebie nawzajem
                                 i podzielić się oczekiwaniami. Pokażę inspiracje z różnych kultur, takich jak sztuka
                                 islamska,
@@ -224,7 +246,8 @@
                                 pędzle. Wyjaśnię, jak
                                 pracować z biskwitem – będziemy mówić o jego czystości, chłonności i precyzyjności.
                                 Przedstawię także działanie
-                                pisaków olejowych i ołówka, które wypalają się w piecu, pozostawiając trwałe wzory. Po
+                                pisaków olejowych i ołówka, które wypalają się w piecu, pozostawiając trwałe wzory.
+                                Po
                                 prezentacji chętnie
                                 odpowiem na Wasze pytania.
                             </p>
@@ -247,7 +270,8 @@
                             </div>
 
                             <p class="workshop-text">
-                                Pierwsza część praktyczna to malowanie kafla z geometrycznym wzorem inspirowanym sztuką
+                                Pierwsza część praktyczna to malowanie kafla z geometrycznym wzorem inspirowanym
+                                sztuką
                                 islamską. Wybierzecie
                                 wzór, który następnie przeniesiecie na kafelek za pomocą kalki lub ołówka. Potem
                                 zaczniemy malować, korzystając
@@ -279,9 +303,11 @@
                             </div>
 
                             <p class="workshop-text">
-                                Druga część warsztatów to swobodne tworzenie wzoru inspirowanego tradycyjnymi stylami,
+                                Druga część warsztatów to swobodne tworzenie wzoru inspirowanego tradycyjnymi
+                                stylami,
                                 takimi jak Delft,
-                                majolika czy ornamenty z orientu. W tej części pracy będziecie mogli eksperymentować z
+                                majolika czy ornamenty z orientu. W tej części pracy będziecie mogli eksperymentować
+                                z
                                 linią, cieniem, fakturą i
                                 akwarelowymi efektami.
                             </p>
@@ -303,7 +329,8 @@
                             </div>
 
                             <p class="workshop-text">
-                                Pod koniec warsztatów odkładamy prace do wyschnięcia, które po około trzech tygodniach
+                                Pod koniec warsztatów odkładamy prace do wyschnięcia, które po około trzech
+                                tygodniach
                                 będą gotowe do wypału.
                                 Wspólnie omówimy Wasze doświadczenia z malowania, a także proces wypalania oraz jak
                                 przygotować kafle do dalszej
@@ -333,14 +360,20 @@
         </div>
     </section>
 
+    <!-- Bg section -->
+    <div
+        class="hidden md:block relative h-[90vh] bg-[url('/images/bg/bg-4.webp')] bg-fixed bg-cover bg-center bg-no-repeat">
+    </div>
+
     <!-- Pracownia -->
-    <section id="pracownia" class="">
+    <section id="pracownia" class="bg-milkoat">
         <div class=" container-base">
             <h2 class="">Pracownia</h2>
             <p class="subtitle">Z miłości do wzorów, z pasji do rzemiosła</p>
             <h3 class="text-2xl  text-clay mt-8 mb-4">Mój proces twórczy</h3>
             <p class="content mb-8 italic">
-                W mojej pracowni każdy kafelek przechodzi przez indywidualny, uważny proces – od pierwszego szkicu po
+                W mojej pracowni każdy kafelek przechodzi przez indywidualny, uważny proces – od pierwszego szkicu
+                po
                 ostatni wypał. To miejsce, gdzie estetyka spotyka się z rzemiosłem, a natura i wzory tworzą wspólną
                 opowieść.
             </p>
@@ -390,11 +423,14 @@
                 (cement-tiles.com).
             </p>
             <p class="content mb-8">Rośliny
-                narysowałam ołówkiem bezpośrednio na biskwicie, zanim przystąpiłam do malowania. Ołówek wypalił się w
+                narysowałam ołówkiem bezpośrednio na biskwicie, zanim przystąpiłam do malowania. Ołówek wypalił się
+                w
                 piecu, ale
-                wcześniej wyznaczył granice, dzięki którym kolory nie wychodziły poza zamierzony kształt. Do dekoracji
+                wcześniej wyznaczył granice, dzięki którym kolory nie wychodziły poza zamierzony kształt. Do
+                dekoracji
                 użyłam farb
-                podszkliwnych, które aplikowałam z buteleczek zakończonych cienkimi metalowymi końcówkami — to pozwoliło
+                podszkliwnych, które aplikowałam z buteleczek zakończonych cienkimi metalowymi końcówkami — to
+                pozwoliło
                 mi swobodnie
                 prowadzić linie i drobne detale.
             </p>
@@ -417,33 +453,37 @@
         </div>
     </section>
 
-
-    <!-- Kontakt -->
-    <section id="kontakt" class="">
-        <div class=" mx-auto container-base bg-eggshell">
-            <h2 class="mb-16 text-center">Kontakt</h2>
-            <form class="space-y-8 flex flex-col items-center" action="https://formsubmit.co/mpond234@gmail.com"
-                method="POST">
-                <input name="name" type="text" placeholder="Twoje imię"
-                    class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta" />
-                <input name="contact" type="text" placeholder="Twój email lub numer telefonu"
-                    class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta" />
-                <textarea name="message" placeholder="Twoja wiadomość"
-                    class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta"
-                    rows="5"></textarea>
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit"
-                    class="bg-clay text-xl text-white py-4 px-16 rounded-xl hover:bg-terracotta transition">Wyślij</button>
-            </form>
-        </div>
-    </section>
+    <!-- Bg section -->
+    <div
+        class="hidden md:block relative bg-[url('/images/bg/bg-5.webp')] bg-fixed bg-cover bg-center bg-no-repeat py-86">
+        <!-- Kontakt -->
+        <section id="kontakt" class="bg-eggshell w-1/2 mx-auto p-12 rounded-2xl">
+            <div class="bg-eggshell">
+                <h2 class="mb-16 text-center">Kontakt</h2>
+                <form class="space-y-8 flex flex-col items-center" action="https://formsubmit.co/mpond234@gmail.com"
+                    method="POST">
+                    <input name="name" type="text" placeholder="Twoje imię"
+                        class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta" />
+                    <input name="contact" type="text" placeholder="Twój email lub numer telefonu"
+                        class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta" />
+                    <textarea name="message" placeholder="Twoja wiadomość"
+                        class="w-full border border-clay p-2 rounded shadow-sm focus:outline-terracotta"
+                        rows="5"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit"
+                        class="bg-clay text-xl text-white py-4 px-16 rounded-xl hover:bg-terracotta transition">Wyślij</button>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <!-- Stopka -->
-    <footer class=" text-center text-sm text-cocoa py-24 leading-12">
+    <footer class=" text-center text-md text-cocoa py-24 leading-12 bg-cocoa text-eggshell">
         <p>
             © 2025 Sarenka Studio. Wszystkie prawa zastrzeżone.
         </p>
-        <p>Design by <a class="underline hover:text-sage" href="https://karola-dev.netlify.app/" target="blank">Karola
+        <p>Design by <a class="underline hover:text-terracotta" href="https://karola-dev.netlify.app/"
+                target="blank">Karola
                 Kukowska</a></p>
     </footer>
 </body>

@@ -29,12 +29,16 @@ html{
 /* Negative Space */
 .container-base {
   @apply mx-auto px-8 sm:px-20 lg:max-w-3/4 2xl:max-w-[1250px] py-16 sm:pt-16 sm:pb-36;
-  @apply border border-stone-400 2xl:border-stone-400;
 }
 
 #navbar {
   @apply py-4 text-lg text-cocoa;
   
+}
+
+/* Utility */
+.soft-border {
+  @apply rounded-2xl shadow;
 }
 
 /* Typography */
@@ -49,22 +53,6 @@ h3 {
 
 h4 {
     @apply text-2xl font-comfortaa tracking-wide font-[600] text-terracotta text-center py-8;
-}
-
-.workshop-card {
-@apply p-6 rounded-2xl shadow flex flex-col justify-items-center;
-}
-
-.workshop-title {
-  @apply text-2xl font-comfortaa text-cocoa/70 normal-case mb-2 py-4 tracking-normal text-left;
-}
-
-.workshop-time {
-@apply text-sm font-comfortaa uppercase bg-cocoa/50 inline p-2 text-eggshell;
-}
-
-.workshop-text {
-  @apply mt-12 mb-4;
 }
 
 .content {
@@ -88,10 +76,32 @@ h4 {
     @apply text-4xl font-dancing text-clay;   
 }
 
-.soft-border {
-  @apply rounded-2xl shadow;
+/* warsztaty */
+.workshop-card {
+@apply p-6 rounded-2xl shadow flex flex-col justify-items-center;
 }
 
+.workshop-card-img {
+  @apply rounded-2xl shadow flex flex-col justify-items-center;
+}
+
+.workshop-img {
+  @apply overflow-hidden rounded-2xl shadow h-96 max-h-96 xl:max-h-[480px] xl:h-full w-full object-cover;
+}
+
+.workshop-title {
+  @apply text-2xl font-comfortaa text-cocoa/70 normal-case mb-2 py-4 tracking-normal text-left;
+}
+
+.workshop-time {
+@apply text-sm font-comfortaa uppercase bg-cocoa/50 inline p-2 text-eggshell;
+}
+
+.workshop-text {
+  @apply mt-12 mb-4;
+}
+
+/* galeria */
 .gallery-img {
   max-width: 260px;
   height: 260px;
@@ -107,6 +117,8 @@ h4 {
   flex-wrap: wrap;
 
 }
+
+/* pracownia */
 .showcase-container {
   @apply flex flex-col md:flex-row gap-8 items-center md:justify-center py-8; 
 }
@@ -118,6 +130,3 @@ h4 {
    @apply h-[220px] w-full object-cover;
 }
 
-.workshop-img {
-  @apply overflow-hidden rounded-2xl shadow h-96 max-h-96 2xl:max-h-[448px] xl:h-full w-full object-cover;
-}
